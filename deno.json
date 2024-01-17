@@ -1,0 +1,6 @@
+{
+    "imports": {
+        "@hono": "https://deno.land/x/hono@v3.12.5/mod.ts",
+        "@deno_dom": "https://deno.land/x/deno_dom@v0.1.43/deno-dom-wasm.ts"
+    }
+}
