@@ -51,7 +51,11 @@ app.get("/:username", async (c: Context) => {
         resultJSON.push(oneResult);
     }
 
-    return c.json(resultJSON);
+    return c.json(resultJSON, {
+      headers: {
+        "access-control-allow-origin": "*"
+      }
+    });
 });
 
 const { serve } = Deno;
